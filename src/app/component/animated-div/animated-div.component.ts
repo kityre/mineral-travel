@@ -14,7 +14,6 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       height: 200px;
       background-color: lightblue;
       margin: 20px;
-      /* Ajoutez d'autres styles si nécessaire */
     }
   `],
   animations: [
