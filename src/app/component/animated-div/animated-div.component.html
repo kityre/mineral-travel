@@ -1,0 +1,5 @@
+<button (click)="toggleMove()">Déplacer la div</button>
+<div 
+  class="moving-div" 
+  [@slideInOut]="isMoved ? 'end' : 'start'">
+</div>
