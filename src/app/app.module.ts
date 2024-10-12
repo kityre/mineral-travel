@@ -2,18 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { ComponentModule } from './component/component.module'; // Vérifiez le chemin
+import { ComponentModule } from './component/component.module'; // Assurez-vous que ce chemin est correct
 
 @NgModule({
   declarations: [
-    AppComponent  // Déclaration de votre composant principal
+    AppComponent // Déclaration de AppComponent ici
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ComponentModule  // Assurez-vous que ce module est importé
+    ComponentModule // Assurez-vous d'importer le module contenant AnimatedDivComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]  // Démarrage avec AppComponent
+  bootstrap: [AppComponent] // Démarrage de l'application avec AppComponent
 })
 export class AppModule { }

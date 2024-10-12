@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
-  selector: 'app-animated-div',
+  selector: 'app-test-animated-div',
   template: `
     <div class="animated-div" @slideInOut>
-      Contenu animé
+      Test Contenu Animé
     </div>
   `,
   styles: [`
     .animated-div {
       width: 200px;
       height: 200px;
-      background-color: lightblue;
+      background-color: lightcoral;
       margin: 20px;
     }
   `],
@@ -24,4 +24,4 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ])
   ]
 })
-export class AnimatedDivComponent { }
+export class TestAnimatedDivComponent { }

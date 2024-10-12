@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AnimatedDivComponent } from './animated-div/animated-div.component'; // Chemin vers votre composant
+import { AnimatedDivComponent } from './animated-div/animated-div.component'; // Vérifiez que le chemin est correct
+import { TestAnimatedDivComponent } from './test-animated-div/test-animated-div.component';
 
 @NgModule({
-  declarations: [AnimatedDivComponent],  // Déclaration de votre composant
+  declarations: [AnimatedDivComponent, TestAnimatedDivComponent], // Ajoutez le nouveau composant ici
   imports: [
-    CommonModule  // Importation du module commun
+    CommonModule
   ],
-  exports: [AnimatedDivComponent]  // Exportation pour utilisation dans d'autres modules
+  exports: [AnimatedDivComponent, TestAnimatedDivComponent] // Exportez également le nouveau composant
 })
 export class ComponentModule { }
